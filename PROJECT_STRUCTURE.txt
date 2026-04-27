@@ -1,0 +1,16 @@
+GHOST TERMINAL - PROJECT STRUCTURE
+===================================
+
+Ghost Terminal/
+│
+├── ghost.py                    # Main orchestrator (Listener + Translator + Executor + Cleaner)
+├── requirements.txt            # Python dependencies
+├── config.py                   # Configuration settings (Ollama endpoint, models, safety settings)
+├── utils/
+│   ├── __init__.py
+│   ├── environment.py          # OS detection (Windows/WSL) and path handling
+│   ├── sanitizer.py            # Code sanitization (strip markdown, validate)
+│   └── safety.py               # Safety checks and confirmation prompts
+├── scripts/                    # Temporary generated scripts stored here during execution
+│   └── .gitkeep
+└── README.md                   # Usage documentation

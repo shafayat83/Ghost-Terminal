@@ -1,0 +1,8 @@
+# Ghost Terminal Dependencies
+# ============================
+# Core HTTP library for Ollama API communication
+requests>=2.31.0
+
+# Optional: Safe deletion to Recycle Bin/Trash instead of permanent 'rm'
+# Install this for Constraint 3 (Destructive Actions)
+send2trash>=1.8.2
